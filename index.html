@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manjula | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #121212;
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background: rgba(0, 0, 0, 0.6);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #00ffcc;
+        }
+        nav {
+            margin-right: 40px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: #00ffcc;
+        }
+        .menu-icon {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #fff;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            background: linear-gradient(135deg, #0f0f0f 40%, #00ffcc30);
+            text-align: center;
+            padding: 20px;
+        }
+        .hero img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid #00ffcc;
+        }
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px #00ffcc;
+        }
+        .hero h2 span {
+            color: #00ffcc;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #00ffcc;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #fff;
+            color: #000;
+        }
+        section {
+            padding: 60px 15px;
+            margin: 20px auto;
+            width: 85%;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(5px);
+        }
+        footer {
+            padding: 15px;
+            background: #000;
+            text-align: center;
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul {
+                flex-direction: column;
+                display: none;
+                width: 100%;
+            }
+            nav ul.show {
+                display: flex;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .menu-icon {
+                display: block;
+            }
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            document.querySelector('nav ul').classList.toggle('show');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Manjula</h1>
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <img src="https://i.postimg.cc/WzSDzP67/Whats-App-Image-2025-03-25-at-21-07-28-0b4bf0f9.jpg' border='0' alt='Whats-App-Image-2025-03-25-at-21-07-28-0b4bf0f9'/></a>" alt="Manjula M">
+        <h2>I'm <span>Manjula M</span></h2>
+        <p>B.Sc Computer Science with Data Science @ DRBCCC Hindu College</p>
+        <a href="#about" class="btn">Know More</a>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Passionate about AI, Data Engineering & Analytics.</p>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>Python, Data Science, AI, Web Development,Java,HTML,CSS,Data Visualization,Big Data Technologies,cloud platform,version control</p>
+    </section>
+    
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <p>Here are some of my certifications:</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/posts/manjula-m-383b522a9_activity-7310293346860650497-BP-6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEo8KQoB4I2pvDg19W9uIFla1bIehmtoNls" target="_blank">CV Dragon</a></li>
+	    <li><a href="https://www.linkedin.com/posts/manjula-m-383b522a9_activity-7310284040698318848-hRlf?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEo8KQoB4I2pvDg19W9uIFla1bIehmtoNls" target="_blank">ICT Academy</a></li>
+	    <li><a href="https://www.linkedin.com/posts/manjula-m-383b522a9_activity-7310283642004492290-awA1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEo8KQoB4I2pvDg19W9uIFla1bIehmtoNls" target="_blank">Guvi</a></li>
+	    <li><a href="https://www.linkedin.com/posts/manjula-m-383b522a9_activity-7310283075454656512-BGFq?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEo8KQoB4I2pvDg19W9uIFla1bIehmtoNls" target="_blank">IBM</a></li>
+	    <li><a href="https://www.linkedin.com/posts/manjula-m-383b522a9_activity-7310282861587165184-ahRc?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEo8KQoB4I2pvDg19W9uIFla1bIehmtoNls" target="_blank">Infosys</a></li>
+	    <li><a href="https://www.linkedin.com/posts/manjula-m-383b522a9_activity-7310282583563513858-JrWf?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEo8KQoB4I2pvDg19W9uIFla1bIehmtoNls" target="_blank">Flex</a></li>
+
+        </ul>
+    </section>
+    
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="https://www.linkedin.com/posts/manjula-m-383b522a9_activity-7310284224387829760-ZcIl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEo8KQoB4I2pvDg19W9uIFla1bIehmtoNls" download class="btn">Download Resume</a>
+<section id="contact" style="width: 85%; margin: 20px auto; padding: 30px; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(5px); border-radius: 10px; text-align: center;">
+        <h2>Contact</h2>
+        <p>Email: <a href="manjulam1207@gmail.com" style="color: #00ffcc; text-decoration: none;">manjulam1207@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/manjula-m-383b522a9/" style="color: #00ffcc; text-decoration: none;">linkedin.com/in/manjula-m</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Manjula M. All rights reserved.</p>
+    </footer>
+</body>
+</html>
